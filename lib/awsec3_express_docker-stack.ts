@@ -24,7 +24,7 @@ export class Awsec3ExpressDockerStack extends cdk.Stack {
     );
 
     const helloContainer = helloTaskDefinition.addContainer("hello", {
-      image: ecs.ContainerImage.fromRegistry("jrwtango/c2express002"),
+      image: ecs.ContainerImage.fromRegistry("julianakatz/cd-aws"),
       memoryLimitMiB: 128,
     });
 
